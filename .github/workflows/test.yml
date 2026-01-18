@@ -1,0 +1,13 @@
+name: Mi primer workflow (Alexandru Eduard Stanciu)
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  ejemplo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Hola, esto es una GitHub Action funcionando"
